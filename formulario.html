@@ -31,21 +31,7 @@
             <button type="submit">Comprar</button>
         </form>
 
-   <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $nombre = htmlspecialchars($_POST['nombre']);
-            $email = htmlspecialchars($_POST['email']);
-            $producto = htmlspecialchars($_POST['producto']);
-            $cantidad = (int)$_POST['cantidad'];
-
-            echo "<h2>Resumen de tu compra:</h2>";
-            echo "<p>Nombre: $nombre</p>";
-            echo "<p>Email: $email</p>";
-            echo "<p>Producto: $producto</p>";
-            echo "<p>Cantidad: $cantidad</p>";
-        }
-        ?>
-        
+   
     </main>
 </body>
 </html>
